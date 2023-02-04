@@ -5,31 +5,100 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Titillium Web', sans-serif;
+    line-height: 1.3;
 }
 
 h1{
-    font-size: 42px;
+    font-size: 4.2rem;
     color: #fff;
 }
 
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+ /*---- re use --- */
+
 .row {
-    max-width: 1140px;
+    max-width: 114rem;
     margin: 0 auto;
 }
 
+section{
+    padding: 8rem 0;
+
+}
+
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+    background: #fff;
+}
+
+h3{
+   font-size: 2.4rem;
+   text-transform: uppercase;
+   font-weight: 600; 
+}
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    font-weight: 300;
+
+}
+
+.btn:link,
+.btn:visited,
 .btn{
     background: #eb7d4b;
-    border-bottom: 3px ;
+    border-bottom: .3rem solid #000;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 16px 40px;
-    border-radius: 3px;
+    padding: 1.6rem 4rem;
+    border-radius: .3rem;
     display: inline-block;
+    margin-top: 4.5rem;
+    font-size: 1.6rem;
 }
+
+
+/* ====== Description  =====*/
+.little-description{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+    
+}
+
+/* ====== header sectiom =====*/
 
 header{
     background: #87509c;
@@ -38,19 +107,19 @@ header{
 
 }
 .logo{
-    margin-top: 35px;
+    margin-top: 3.5rem;
     width: auto;
-    height: 35px;
+    height: 3.5rem;
     float: left;
 
 }
 .main-nav{
     float: right;
-    margin-top: 40px; 
+    margin-top: 4rem; 
 }
 .main-nav li{
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 3rem;
    
 
 }
@@ -64,10 +133,10 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     background: #ffffff00;
-    padding: 6px 16px;
-    border-radius: 3px;
+    padding: .6rem 1.6rem;
+    border-radius: .3rem;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: 0.3s;
 
 }
@@ -89,4 +158,26 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
 
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+    border-color: #c86a40;
+}
+
+/* ====== services section===== */
+
+.service-section{
+    color: #fff;
+    text-align: center;
+    background: #17c2a4;
+}
+.service-section h2::after{
+    background: #14a58c;
+}
+
+.services-icon{
+    height: 12rem;
+    margin-top: 4rem;
+    margin-bottom: 3.5rem;
 }
