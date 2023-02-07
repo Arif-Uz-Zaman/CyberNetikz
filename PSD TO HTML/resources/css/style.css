@@ -7,6 +7,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Titillium Web', sans-serif;
@@ -62,7 +63,8 @@ h2::after{
 h3{
    font-size: 2.4rem;
    text-transform: uppercase;
-   font-weight: 600; 
+   font-weight: 600;
+   text-align: center; 
 }
 .box{
     padding: 1%;
@@ -96,6 +98,7 @@ h3{
     width: 60%;
     margin-left: 20%;
     line-height: 3rem;
+    text-align: center;
     
 }
 
@@ -217,6 +220,7 @@ header{
     font-size: 1.6rem;
     text-transform: capitalize;
     margin-top: .6rem;
+    display: inline-block;
 
 }
 
@@ -252,4 +256,52 @@ header{
 .social-link ul li a:hover i::before{
     background: #fff;
     transform: rotate(360deg);
+}
+
+
+/* ====== skill section===== */
+
+.skill-section{
+    color: #3c4761;
+    background: #fff;
+
+}
+
+.skill-section h3{
+   margin-right: 5rem;
+}
+
+.skill-section h2,
+.skill-section h3{
+    color: #3c4761;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+
+svg.radial-progress text{
+    fill: #3c3c3c;
+    font-size: 1.5rem;
+}
+
+svg.web-design circle{
+    stroke: #30bae7;
+}
+
+svg.html-css circle{
+    stroke: #d74680;
+}
+svg.graphic-design circle{
+    stroke: #15c7a8;
+}
+svg.ui-ux circle{
+    stroke: #eb7d4b;
 }

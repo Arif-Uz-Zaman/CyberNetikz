@@ -11,6 +11,7 @@
     <!---vendors files ---->
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/style_Grid.css">
+    <link rel="stylesheet" href="vendors\css\animated-circle.css">
     <!---resources files ---->
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/responsive.css">
@@ -29,8 +30,8 @@
                 <ul class="main-nav">
                     <li class="active" ><a href="#">HOME</a></li>
                     <li ><a href="#service">SERVICES</a></li>
-                    <li ><a href="#">WORK</a></li>
-                    <li ><a href="#">BLOCK</a></li>
+                    <li ><a href="#team">TEAM</a></li>
+                    <li ><a href="#skill">SKILL</a></li>
                     <li ><a href="#">CONTACT</a></li>
                     
                 </ul>
@@ -149,12 +150,59 @@
     
     </section>
 
+    <!-----team section end---->
+
+    <!-----Skill section start---->
+    <section class="skill-section clearfix" id="skill">
+        <div class="row">
+            <h2>WE GOT SkILLS!</h2>
+            <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress web-design" data-percentage="90" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                </svg>
+                <h3>Web Design</h3>
+            </div>
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress html-css" data-percentage="90" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                </svg>
+                <h3>html / css</h3>
+            </div>
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress graphic-design" data-percentage="70" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                </svg>
+                <h3>Graphic Design</h3>
+            </div>
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress ui-ux" data-percentage="80" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                </svg>
+                <h3>UI / UX</h3>
+            </div>
+        </div>
+    </section>
+
 
 
 
     <!--- script ---->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="vendors/js/html5shiv.min.js">  </script> 
     <script src="vendors/js/respond.min.js">  </script>
+    <script src="resources\js\main.js"></script>
+    <script src="vendors/js/animated-circle.js"><script>
 
 </body>
 </html>
