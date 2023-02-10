@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Variables</h2>
+
+    <p>In this example, x, y, and z are variables.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      let x = 5;
+      let y = 6;
+      let z = x + y;
+      document.getElementById("demo").innerHTML = "The value of z is: " + z;
+    </script>
+
+    <p>In this example, x, y, and z are undeclared variables.</p>
+
+    <p id="text"></p>
+
+    <script>
+      x = 5;
+      y = 6;
+      z = x + y;
+      document.getElementById("text").innerHTML = "The value of z is: " + z;
+    </script>
+
+    <p>In this example, price1, price2, and total are variables.</p>
+
+    <p id="demo2"></p>
+
+    <script>
+      const price1 = 50;
+      const price2 = 60;
+      let total = price1 + price2;
+      document.getElementById("demo2").innerHTML = "The total is: " + total;
+    </script>
+  </body>
+</html>

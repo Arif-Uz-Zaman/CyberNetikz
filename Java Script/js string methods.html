@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>Extract a part of a string counting from the end:</p>
+<p id="demo"></p>
+
+<script>
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+document.getElementById("demo").innerHTML = part;
+</script>
+
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="demo1"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo1").innerHTML = str.substring(7,13);
+</script>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo3">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo3").innerHTML;
+  document.getElementById("demo3").innerHTML =
+  text.replace("Microsoft","CyberNetikz");
+}
+</script>
+
+
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo4">Hello World!</p>
+
+
+
+<button onclick="myFunction1()">press to convert into LowerCase </button>
+
+<script>
+function myFunction1() {
+  let text = document.getElementById("demo4").innerHTML;
+  document.getElementById("demo4").innerHTML =
+  text.toLowerCase();
+}
+</script>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo4").innerHTML;
+  document.getElementById("demo4").innerHTML =
+  text.toUpperCase();
+}
+</script>
+
+</body>
+</html>
+
+
