@@ -1,0 +1,37 @@
+.box1 {
+    width:100px;
+    height:100px;
+    background:red;
+    display:none;
+    margin:20px;
+}
+.box2 {
+    width:100px;
+    height:100px;
+    background:Yellow;
+    display:none;
+    margin:20px;
+}
+.box3 {
+    width:100px;
+    height:100px;
+    background:Green;
+    display:none;
+    margin:20px;
+}
+
+
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
