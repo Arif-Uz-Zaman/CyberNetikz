@@ -65,4 +65,18 @@ $(document).ready(function(){
       $("#stop").click(function(){
         $("#panel").stop();
     });
+    $("#start1").click(function(){
+        $(".box4").animate({left: '100px',fontSize: '4em'}, 6000);
+    });
+    $("#stop1").click(function(){
+        $(".box4").stop();
+      });
+    
+      $("#stop2").click(function(){
+        $(".box4").stop(true);
+      });
+    
+      $("#stop3").click(function(){
+        $(".box4").stop(true, true);
+      }); 
 });
